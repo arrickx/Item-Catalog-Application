@@ -2,7 +2,7 @@
 * This application  provides a list of items within a variety of categories as well as provide a user authentication system.  Users will have the ability to post, edit and delete their own items.
 
 ## Getting Started
-* You can *[clone](TODO)* or *[download](TODO)* this project via [GitHub](https://github.com) to your local machine.
+* You can *[clone](https://github.com/arrickx/Item-Catalog-Application.git)* or *[download](https://github.com/arrickx/Item-Catalog-Application.git)* this project via [GitHub](https://github.com) to your local machine.
 
 ### Prerequisites
 You will need to install these following application in order to make this code work.

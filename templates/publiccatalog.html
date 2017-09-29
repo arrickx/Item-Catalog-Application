@@ -1,0 +1,28 @@
+{% include "header.html" %}
+<nav>
+  <h2>Categories</h2>
+  <ul>
+    {% for i in categories %}
+    <li>
+      <a href = "{{url_for('showCategories', categories_id = i.id)}}" style="color:black">{{i.name}}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
+<article class="maxheight">
+  <h2>Recent Added</h2>
+  <ul>
+    {% for i in items %}
+    <li>
+      <a href = "{{url_for('showItem',categories_id=i.categories_id, items_id=i.id)}}"style="color:black">{{i.name}} - {{i.categories.name}}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  </br></br>
+</article>
+<footer>
+  <a href ="https://www.linkedin.com/in/richterlau/" target="_blank"><img src="{{ url_for('static', filename='linkedin.png') }}" alt="my linkedin Link" height="24" width="30"></a> &nbsp
+  <a href="https://github.com/arrickx" target="_blank"><img src="{{ url_for('static', filename='github.png') }}" alt="my GitHub Link" height="24" width="24"></a> &nbsp&nbsp
+</footer>
+</body>
+</html>

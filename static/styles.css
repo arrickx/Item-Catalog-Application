@@ -1,0 +1,122 @@
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+header {
+	text-align: center;
+	border-bottom: 2px solid gray;
+	padding: 15px;
+}
+
+nav {
+	float: left;
+	max-width: 250px;
+	margin: 0;
+	padding: 1em;
+	border-right: 2px solid gray;
+}
+
+article {
+	padding-left: 300px;
+	padding-top: 20px;
+	min-height: 428px;
+}
+
+body {
+	position: absolute;
+	left: 10%;
+	right: 10%;
+	border: 2px solid;
+	border-radius: 25px;
+	padding: 5px;
+	margin: 5px;
+	border-color: #999999;
+	font-family: 'Advent Pro';
+	font-size: 22px;
+}
+
+footer {
+	border-top: 2px solid gray;
+	padding-top: 5px;
+	text-align: right;
+	bottom: 0;
+}
+
+.flash {
+	text-align: center;
+	color: red;
+}
+
+.inline {
+	padding-top: 20px;
+	display: inline;
+}
+
+.item {
+	text-align: center;
+	padding-top: 10px;
+}
+
+.description {
+	max-width: 80%;
+	text-align-last: auto;
+	padding-left: 10%;
+}
+
+.button {
+	background-color: white;
+	color: black;
+	border: 2px solid #555555;
+	border-radius: 12px;
+	padding: 8px 28px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 18px;
+	margin: 4px 2px;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	cursor: pointer;
+}
+
+.button {
+	background-color: white;
+	color: black;
+	border: 2px solid #555555;
+}
+
+.button:hover {
+	background-color: #555555;
+	color: white;
+	text-decoration: none;
+}
+
+.login {
+	float: right;
+}
+
+.logo {
+	float: left;
+	padding-left: 30px;
+}
+
+.loginpage {
+	text-align: center;
+	min-height: 550px;
+}
+
+.maxheight {
+	max-height: 400px;
+}
+
+.minheight {
+	min-height: 428px;
+}
