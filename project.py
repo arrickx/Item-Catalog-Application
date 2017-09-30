@@ -1,9 +1,10 @@
 from flask import Flask, render_template, request, redirect
-from flask import jsonify, url_for, flash
+from flask import jsonify, url_for, flash, g
 from sqlalchemy import create_engine, asc
 from sqlalchemy.orm import sessionmaker
 from database_setup import Base, Categories, CategoryItem, User
 from flask import session as login_session
+from functools import wraps
 import random
 import string
 from oauth2client.client import flow_from_clientsecrets
@@ -204,6 +205,18 @@ def itemJSON(categories_id, items_id):
     return jsonify(ItemDetails=[items.serialize])
 
 
+# Login Required function
+def login_required(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if 'username' in login_session:
+            return f(*args, **kwargs)
+        else:
+            flash("You are not allowed to access there")
+            return redirect('/login')
+    return decorated_function
+
+
 # Main page
 @app.route('/')
 @app.route('/catalog')
@@ -221,9 +234,8 @@ def showCatalog():
 
 # Create new item
 @app.route('/catalog/new', methods=['GET', 'POST'])
+@login_required
 def newItem():
-    if 'username' not in login_session:  # make sure user has logined
-        return redirect('/login')
     if request.method == 'POST':  # get data from the form
         newItem = CategoryItem(name=request.form['name'],
                                description=request.form['description'],
@@ -264,10 +276,9 @@ def showItem(categories_id, items_id):
 # Edit the specific item
 @app.route('/catalog/<int:categories_id>/<int:items_id>/edit',
            methods=['GET', 'POST'])
+@login_required
 def editItem(categories_id, items_id):
     editedItem = session.query(CategoryItem).filter_by(id=items_id).one()
-    if 'username' not in login_session:  # make sure user logined
-        return redirect('/login')
     # make sure user is the creator
     if editedItem.user_id != login_session['user_id']:
         return "<script>function myFunction() {alert('You are not authorized"\
@@ -304,10 +315,9 @@ def editItem(categories_id, items_id):
 # Delete the specific item
 @app.route('/catalog/<int:categories_id>/<int:items_id>/delete',
            methods=['GET', 'POST'])
+@login_required
 def deleteItem(categories_id, items_id):
     itemToDelete = session.query(CategoryItem).filter_by(id=items_id).one()
-    if 'username' not in login_session:  # make sure user logined
-        return redirect('/login')
     # make sure user is the creator
     if itemToDelete.user_id != login_session['user_id']:
         return "<script>function myFunction() {alert('You are not authorized "\
