@@ -30,7 +30,11 @@ $ vagrant ssh
 
 ### Setting up the enviroment
 * Move the folder you downloaded from GitHub and put it into the vagrant folder
-* Use the command line to get in to this folder
+* use the following line to get into the vagrant VM folder
+```sh
+$ cd /vagrant
+```
+* Use the command line to get in to the folder you just downloaded
 * Then you can run this command
 ```sh
 $ python lotsofitems.py
