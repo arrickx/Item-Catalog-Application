@@ -253,7 +253,7 @@ def showItem(categories_id, items_id):
     categories = session.query(Categories).filter_by(id=categories_id).one()
     items = session.query(CategoryItem).filter_by(id=items_id).one()
     if 'username' not in login_session or \
-    items.user_id != login_session['user_id']:
+            items.user_id != login_session['user_id']:
         # make sure user logined and user is the creator
         return render_template('publicitem.html', categories=categories,
                                items=items)
@@ -270,9 +270,9 @@ def editItem(categories_id, items_id):
         return redirect('/login')
     # make sure user is the creator
     if editedItem.user_id != login_session['user_id']:
-        return "<script>function myFunction() {alert('You are not authorized\
-         to edit this item. Please create your own item in order to edit.');\
-         window.location = '/';}</script><body onload='myFunction()''>"
+        return "<script>function myFunction() {alert('You are not authorized"\
+         "to edit this item. Please create your own item in order to edit.');"\
+         "window.location = '/';}</script><body onload='myFunction()''>"
     if request.method == 'POST':
         if request.form['name'] == "":  # if name is empty it will be unchange
             editedItem.name = editedItem.name
@@ -310,9 +310,9 @@ def deleteItem(categories_id, items_id):
         return redirect('/login')
     # make sure user is the creator
     if itemToDelete.user_id != login_session['user_id']:
-        return "<script>function myFunction() {alert('You are not authorized \
-         to delete this item. Please create your own item in order to delete \
-         .');window.location = '/';}</script><body onload='myFunction()''>"
+        return "<script>function myFunction() {alert('You are not authorized "\
+         "to delete this item. Please create your own item in order to delete"\
+         " .');window.location = '/';}</script><body onload='myFunction()''>"
     if request.method == 'POST':
         session.delete(itemToDelete)
         session.commit()
@@ -321,6 +321,7 @@ def deleteItem(categories_id, items_id):
     else:
         return render_template('deleteitem.html', categories_id=categories_id,
                                items_id=items_id, item=itemToDelete)
+
 
 # disconnect from the login session
 @app.route('/disconnect')
