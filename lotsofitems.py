@@ -257,4 +257,4 @@ categoryItem1 = CategoryItem(user_id=1, name="Despicable Me 3",
 session.add(categoryItem1)
 session.commit()
 
-print "added category items!"
+print (added category items!)
