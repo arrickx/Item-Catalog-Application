@@ -34,7 +34,7 @@ class CategoryItem(Base):
     __tablename__ = 'category_item'
     name = Column(String(80), nullable=False)
     id = Column(Integer, primary_key=True)
-    description = Column(String(250))
+    description = Column(String(500))
     categories_id = Column(Integer, ForeignKey('categories.id'))
     categories = relationship(Categories, cascade="all, delete-orphan",
                               single_parent=True)
