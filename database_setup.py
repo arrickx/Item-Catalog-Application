@@ -5,6 +5,9 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from sqlalchemy import create_engine
 
+
+DB_NAME = "itemcatalog.db"
+
 Base = declarative_base()
 
 
