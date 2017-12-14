@@ -72,159 +72,109 @@ session.commit()
 
 # Add Items into categories
 categoryItem1 = CategoryItem(user_id=1, name="West Side Story",
-                             description="Two youngsters from rival New York\
-                              City gangs fall in love, but tensions between \
-                              their respective friends build toward tragedy.",
+                             description="N/A",
                              categories=category8)
 session.add(categoryItem1)
 session.commit()
 
 categoryItem1 = CategoryItem(user_id=1, name="The Silence of the Lambs",
-                             description="A young F.B.I. cadet must confide in\
-                              an incarcerated and manipulative killer to \
-                              receive his help on catching another serial \
-                              killer who skins his victims.",
+                             description="N/A",
                              categories=category7)
 session.add(categoryItem1)
 session.commit()
 
 categoryItem1 = CategoryItem(user_id=1, name="The Longest Day",
-                             description="The events of D-Day, told on a \
-                             grand scale from both the Allied and German \
-                             points of view.",
+                             description="N/A",
                              categories=category10)
 session.add(categoryItem1)
 session.commit()
 
 categoryItem1 = CategoryItem(user_id=1, name="Apocalypse Now",
-                             description="During the Vietnam War, Captain\
-                              Willard is sent on a dangerous mission into\
-                               Cambodia to assassinate a renegade colonel\
-                                who has set himself up as a god among a \
-                                local tribe.",
+                             description="N/A",
                              categories=category10)
 session.add(categoryItem1)
 session.commit()
 
 categoryItem1 = CategoryItem(user_id=1, name="Scarface",
-                             description="In Miami in 1980, a determined\
-                              Cuban immigrant takes over a drug cartel \
-                              and succumbs to greed.",
+                             description="N/A",
                              categories=category4)
 session.add(categoryItem1)
 session.commit()
 
 categoryItem1 = CategoryItem(user_id=1, name="The Secret Life of Pets",
-                             description="The quiet life of a terrier \
-                             named Max is upended when his owner takes \
-                             in Duke, a stray whom Max instantly dislikes.",
+                             description="N/A",
                              categories=category3)
 session.add(categoryItem1)
 session.commit()
 
 categoryItem1 = CategoryItem(user_id=1, name="Dance Academy: The Movie",
-                             description="This 2017 movie follows the \
-                             original dance academy TV show and tracks \
-                             where the characters are in their lives now.",
+                             description="N/A",
                              categories=category8)
 session.add(categoryItem1)
 session.commit()
 
 categoryItem1 = CategoryItem(user_id=1, name="The Good, the Bad and the Ugly",
-                             description="A bounty hunting scam joins two men\
-                              in an uneasy alliance against a third in a race\
-                               to find a fortune in gold buried in a remote\
-                                cemetery.",
+                             description="N/A",
                              categories=category11)
 session.add(categoryItem1)
 session.commit()
 
 categoryItem1 = CategoryItem(user_id=1, name="Hidden Figures",
-                             description="The story of a team of female\
-                              African-American mathematicians who served\
-                               a vital role in NASA during the early years\
-                                of the U.S. space program.",
+                             description="N/A",
                              categories=category5)
 session.add(categoryItem1)
 session.commit()
 
 categoryItem1 = CategoryItem(user_id=1, name="300",
-                             description="King Leonidas of Sparta and a force\
-                              of 300 men fight the Persians at Thermopylae in\
-                               480 B.C.",
+                             description="N/A",
                              categories=category6)
 session.add(categoryItem1)
 session.commit()
 
 categoryItem1 = CategoryItem(user_id=1, name="The Martian",
-                             description="An astronaut becomes stranded on \
-                             Mars after his team assume him dead, and must \
-                             rely on his ingenuity to find a way to signal \
-                             to Earth that he is alive.",
+                             description="N/A",
                              categories=category9)
 session.add(categoryItem1)
 session.commit()
 
 categoryItem1 = CategoryItem(user_id=1, name="Kingsman: The Golden Circle",
-                             description="When their headquarters are \
-                             destroyed and the world is held hostage, \
-                             the Kingsman's journey leads them to the \
-                             discovery of an allied spy organization in \
-                             the US. These two elite secret organizations \
-                             must band together to defeat a common enemy.",
+                             description="N/A",
                              categories=category1)
 session.add(categoryItem1)
 session.commit()
 
 categoryItem1 = CategoryItem(user_id=1, name="The Godfather",
-                             description="The aging patriarch of an organized\
-                              crime dynasty transfers control of his \
-                              clandestine empire to his reluctant son.",
+                             description="N/A",
                              categories=category4)
 session.add(categoryItem1)
 session.commit()
 
 categoryItem1 = CategoryItem(user_id=1, name="Django Unchained",
-                             description="With the help of a German bounty\
-                              hunter, a freed slave sets out to rescue his\
-                              wife from a brutal Mississippi plantation \
-                              owner.",
+                             description="N/A",
                              categories=category11)
 session.add(categoryItem1)
 session.commit()
 
 categoryItem1 = CategoryItem(user_id=1, name="Dunkirk",
-                             description="Allied soldiers from Belgium, \
-                             the British Empire and France are surrounded\
-                              by the German Army, and evacuated during a \
-                              fierce battle in World War II.",
+                             description="N/A",
                              categories=category5)
 session.add(categoryItem1)
 session.commit()
 
 categoryItem1 = CategoryItem(user_id=1, name="Titanic",
-                             description="A seventeen-year-old aristocrat\
-                             falls in love with a kind but poor artist \
-                             aboard the luxurious, ill-fated R.M.S. Titanic.",
+                             description="N/A",
                              categories=category6)
 session.add(categoryItem1)
 session.commit()
 
 categoryItem1 = CategoryItem(user_id=1, name="Star Wars: The Last Jedi",
-                             description="Having taken her first steps into\
-                              a larger world in Star Wars: The Force Awakens\
-                               (2015), Rey continues her epic journey with \
-                               Finn, Poe, and Luke Skywalker in the next \
-                               chapter of the saga.",
+                             description="N/A",
                              categories=category9)
 session.add(categoryItem1)
 session.commit()
 
 categoryItem1 = CategoryItem(user_id=1, name="Deadpool",
-                             description="A fast-talking mercenary with \
-                             a morbid sense of humor is subjected to a rogue\
-                              experiment that leaves him with accelerated \
-                              healing powers and a quest for revenge.",
+                             description="N/A",
                              categories=category1)
 session.add(categoryItem1)
 session.commit()
@@ -232,27 +182,19 @@ session.commit()
 categoryItem1 = CategoryItem(user_id=1,
                              name="Pirates of the Caribbean: \
                              Dead Men Tell No Tales",
-                             description="Captain Jack Sparrow searches \
-                             for the trident of Poseidon while being pursued\
-                              by an undead sea captain and his crew.",
+                             description="N/A",
                              categories=category2)
 session.add(categoryItem1)
 session.commit()
 
 categoryItem1 = CategoryItem(user_id=1, name="It",
-                             description="A group of bullied kids band \
-                             together when a shapeshifting demon, taking \
-                             the appearance of a clown, begins hunting \
-                             children.",
+                             description="N/A",
                              categories=category7)
 session.add(categoryItem1)
 session.commit()
 
 categoryItem1 = CategoryItem(user_id=1, name="Despicable Me 3",
-                             description="Gru meets his long-lost charming,\
-                              cheerful, and more successful twin brother Dru\
-                               who wants to team up with him for one last\
-                                criminal heist.",
+                             description="N/A",
                              categories=category3)
 session.add(categoryItem1)
 session.commit()
