@@ -1,5 +1,6 @@
 # Item-Catalog-Application
 * This application  provides a list of items within a variety of categories as well as provide a user authentication system.  Users will have the ability to post, edit and delete their own items.
+> [![Image](gif/catalog1.gif)](Image)
 
 ## Getting Started
 * You can *[clone](https://github.com/arrickx/Item-Catalog-Application.git)* or *[download](https://github.com/arrickx/Item-Catalog-Application.git)* this project via [GitHub](https://github.com) to your local machine.
@@ -15,8 +16,8 @@ You will also need to download these following files to make it work.
 
 ### Installing
 
-* Unzip the **VM configuration** and you will find a vagrant folder
-* Use the **Terminal** to get into the vagrant folder from **VM configuration**
+* Unzip the **VM configuration** and you will find a **vagrant** folder
+* Use the **Terminal** to get into the **vagrant** folder from **VM configuration**
 * run the following command
 ```sh
 $ vagrant up
@@ -47,8 +48,13 @@ $ python project.py
 
 ### How to use
 * You can browse through the website to find out the different categories of movies.
+> [![Image](gif/catalog1.gif)](Image)
 * You can also create you own items after you login.
+> [![Image](gif/catalog2.gif)](Image)
 * Only the users who created the item have the ability to post, edit, and delete it.
+> [![Image](gif/catalog3.gif)](Image)
+* Once you log out. You can lost your right to change it.
+> [![Image](gif/catalog4.gif)](Image)
 
 ## License
 
