@@ -53,9 +53,9 @@ $ python project.py
 > [![Image](gif/catalog2.gif)](Image)
 * Only the users who created the item have the ability to post, edit, and delete it.
 > [![Image](gif/catalog3.gif)](Image)
-> [![Image](gif/catalog5.gif)](Image)
-* Once you log out. You can lost your right to change it.
 > [![Image](gif/catalog4.gif)](Image)
+* Once you log out. You can lost your right to change it.
+> [![Image](gif/catalog5.gif)](Image)
 
 ## License
 
