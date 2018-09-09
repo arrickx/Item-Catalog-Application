@@ -36,8 +36,7 @@ class CategoryItem(Base):
     id = Column(Integer, primary_key=True)
     description = Column(String(250))
     categories_id = Column(Integer, ForeignKey('categories.id'))
-    categories = relationship(Categories, cascade="all, delete-orphan",
-                              single_parent=True)
+    categories = relationship(Categories, single_parent=True)
     user_id = Column(Integer, ForeignKey('user.id'))
     user = relationship(User)
 
