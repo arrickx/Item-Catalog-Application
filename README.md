@@ -52,7 +52,9 @@ $ python project.py
 * You can also create you own items after you login.
 > [![Image](gif/catalog2.gif)](Image)
 * Only the users who created the item have the ability to post, edit, and delete it.
+* You can edit an item that you created.
 > [![Image](gif/catalog3.gif)](Image)
+* You can also delete the item that you created.
 > [![Image](gif/catalog4.gif)](Image)
 * Once you log out. You can lost your right to change it.
 > [![Image](gif/catalog5.gif)](Image)
